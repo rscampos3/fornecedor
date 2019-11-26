@@ -1,0 +1,11 @@
+server:
+  port: 8081
+  
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/fornecedor
+    username: root
+    password: 
