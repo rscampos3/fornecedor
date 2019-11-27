@@ -17,7 +17,7 @@ public class InfoController {
 	@Autowired
 	private InfoService infoService;
 
-	@RequestMapping(value = "/estado/{uf}")
+	@RequestMapping(value = "/{uf}")
 	public ResponseEntity<InfoFornecedor> getInfoPorEstado(@PathVariable("uf") String uf) {
 		return new ResponseEntity<InfoFornecedor>(this.infoService.getInfoPorEstado(uf), HttpStatus.OK);
 	}
