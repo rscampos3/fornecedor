@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log4j:configuration>
+	<appender name="SYSLOG"
+		class="org.apache.log4j.net.SyslogAppender">
+		<errorHandler
+			class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+		<param name="Facility" value="LOCAL7" />
+		<param name="FacilityPrinting" value="false" />
+		<param name="Header" value="true" />
+		<param name="SyslogHost" value="logs6.papertrailapp.com:36946" />
+		<param name="ConversionPattern" value="%p: %c{2} %x %m %n" />
+	</appender>
+</log4j:configuration>
